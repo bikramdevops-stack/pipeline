@@ -15,4 +15,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name = "rg-bik"
   location = "east us"
+  tags = {
+    owner="bikram"
+  }
 }
