@@ -1,11 +1,5 @@
 terraform {
-  backend "azurerm" {
-    resource_group_name = "rg_admin"
-    storage_account_name = "statemanage"
-    container_name = "statemanage"
-    key_id="bikram.tfstate"
-    
-  }
+  backend "azurerm" {}
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
