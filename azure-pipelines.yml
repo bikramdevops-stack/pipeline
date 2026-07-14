@@ -1,0 +1,13 @@
+trigger: none
+
+pool: my_pool 
+
+stages:
+  - stage:
+    jobs:
+      - job: 
+        steps:
+        - task: TerraformInstaller@1
+          inputs:
+            terraformVersion: 'latest'
+            
